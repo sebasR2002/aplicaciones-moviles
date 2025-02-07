@@ -53,18 +53,19 @@ body {
 }
 
 .Points {
-    grid-area: 1 / 1 / 2 / 2;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    padding-right: 20px; /* Add padding to create separation from the right edge */
-}
-.Shipping
-{
     grid-area: 1 / 2 / 2 / 3;
     display: flex;
     justify-content: left;
     align-items: center;
+    /* Add padding to create separation from the right edge */
+}
+
+.Shipping {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
 }
 
 
@@ -86,6 +87,7 @@ body {
 .logo img {
     width: auto;
     height: 55px;
+    margin-right: 20px;
 }
 
 .search-bar {
@@ -97,7 +99,8 @@ body {
     border-bottom: #000 2px solid;
     padding: 0 10px;
     background-color: #fff;
-    margin-left: -55em;
+    margin-left: -45em;
+    
 }
 
 .nav-icon {
@@ -159,20 +162,325 @@ p {
     line-height: 1.6;
 }
 
-.price {
-    font-size: 1.5em;
-    color: #28a745;
-}
-
-.gold-points {
-    color: #ffc107;
-}
-
 .BuyButton {
     background-color: red;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 8px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: #333;
+}
+
+.back_game_info {
+    background: #D6F0FA;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+
+
+}
+
+.breadcrumb {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+.breadcrumb span {
+    color: #777;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    background: white;
+}
+
+.image-gallery {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumbnails img {
+    width: 60px;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.thumbnails img:hover {
+    border-color: #0073e6;
+}
+
+.game-info {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.platform {
+    font-size: 14px;
+    color: #777;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gold-points {
+    font-size: 14px;
+    color: #777;
+}
+
+.download-btn {
+    background: #e60012;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.download-btn:hover {
+    background: #c40010;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+}
+
+.rating {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+.rating img {
+    width: 60px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.game-description {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+
+
+    margin-top: 30px;
+    background: white;
+}
+
+.game-description .text {
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 16px;
+}
+
+.game-description h2 {
+    margin-bottom: 10px;
+}
+
+.read-more {
+    color: #e60012;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.explore-btn {
+    background: #e60012;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.explore-btn:hover {
+    background: #c40010;
+}
+.game-image {
+    grid-area: 1 / 2 / 2 / 3;
+    
+}
+.game-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+.game-details {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 30px;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+}
+.esrb-rating {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.play-modes {
+    grid-area: 1 / 2 / 2 / 3;
+}
+.esrb-rating img {
+    width: 60px;
+    height: auto;
+    margin-right: 5px;
+}
+.esrb-rating p {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.esrb-rating h3, .play-modes h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.play-modes .modes {
+    display: flex;
+    gap: 20px;
+}
+
+.mode {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.mode img {
+    width: 180px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.game-requeriments{
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    background: #f8f8f8;
+    padding: 20px;
+   
+}
+
+.requeriments-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las columnas */
+    padding: 20px;
+    border-radius: 8px;
+    background-color:white;
+}
+
+/* Estilos para ambas columnas */
+.column-left,
+.column-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+/* Estilos para cada elemento de la lista */
+.item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Línea gris entre las filas */
+}
+
+
+.column-left .item {
+    gap: 10px; }
+
+
+.item-text {
+    font-size: 16px;
+    color: #333;
+}
+
+
+.item:last-child {
+    border-bottom: none;
+}
+.imagen-fachera
+{ max-width: 1200px;
+    margin: auto;
+}
+.imagen-fachera img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 100%;
     border-radius: 8px;
 }
