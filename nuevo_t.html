@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>GESTEC - Nuevo ticket</title>
+  <!-- Vinculamos el archivo CSS -->
+  <link rel="stylesheet" href="styles_nuevo_t.css" />
+</head>
+<body>
+  <!-- Barra superior -->
+  <header class="top-bar">
+    <div class="logo-placeholder"></div>
+    <h1>GESTEC</h1>
+  </header>
+
+  <!-- Barra lateral con íconos -->
+  <aside class="sidebar">
+    <!-- Ícono superior (ejemplo: crear ticket) -->
+    <div class="icon-placeholder"></div>
+    <!-- Ícono siguiente (ejemplo: listado de tickets) -->
+    <div class="icon-placeholder"></div>
+    <!-- Ícono siguiente (ejemplo: historial, reloj, etc.) -->
+    <div class="icon-placeholder"></div>
+    <!-- Ícono inferior (ejemplo: salir, ajustes, etc.) -->
+    <div class="icon-placeholder"></div>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main>
+    <h2>Nuevo ticket</h2>
+    <form class="ticket-form">
+      <label for="categoria">Categoría</label>
+      <select id="categoria" name="categoria">
+        <option value="">selecciona</option>
+        <!-- Agrega más opciones aquí -->
+      </select>
+
+      <label for="prioridad">Prioridad</label>
+      <select id="prioridad" name="prioridad">
+        <option value="">selecciona</option>
+        <!-- Agrega más opciones aquí -->
+      </select>
+
+      <label for="detalle">Detalle</label>
+      <textarea
+        id="detalle"
+        name="detalle"
+        rows="5"
+        placeholder="Describe la novedad"
+      ></textarea>
+
+      <button type="submit">Guardar</button>
+    </form>
+  </main>
+</body>
+</html>
