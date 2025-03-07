@@ -1,13 +1,132 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+
+  <div class="div_index">
+    <!-- Barra superior -->
+    <header class="top-bar">
+      <div class="logo-placeholder"></div>
+      <h1>GESTEC</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+      <div class="icon-placeholder"></div>
+      <form class="login-form">
+        <label for="username">User</label>
+        <input type="text" id="username" name="username" placeholder="User" />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" />
+
+        <button type="submit">Iniciar sesión</button>
+      </form>
+    </main>
+  </div>
+  <div class="div_activos">
+    <!-- Barra superior -->
+    <header class="top-bar">
+      <div class="logo-placeholder"></div>
+      <h1>GESTEC</h1>
+    </header>
+
+    <!-- Barra lateral con íconos -->
+    <aside class="sidebar">
+      <!-- Íconos simulados -->
+      <div class="icon-placeholder"></div>
+      <div class="icon-placeholder"></div>
+      <div class="icon-placeholder"></div>
+      <div class="icon-placeholder"></div>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main>
+      <h2>Tickets activos</h2>
+
+      <!-- Tarjeta de ticket 1 -->
+      <div class="ticket-card">
+        <p><strong>Prioridad:</strong> critico &nbsp; <strong>ID:</strong> #####</p>
+        <p><strong>Categoría:</strong> redes</p>
+        <div class="arrow-placeholder"></div>
+      </div>
+
+      <!-- Tarjeta de ticket 2 -->
+      <div class="ticket-card">
+        <p><strong>Prioridad:</strong> alta &nbsp; <strong>ID:</strong> #####</p>
+        <p><strong>Categoría:</strong> hardware</p>
+        <div class="arrow-placeholder"></div>
+      </div>
+
+      <!-- Tarjeta de ticket 3 -->
+      <div class="ticket-card">
+        <p><strong>Prioridad:</strong> media &nbsp; <strong>ID:</strong> #####</p>
+        <p><strong>Categoría:</strong> software</p>
+        <div class="arrow-placeholder"></div>
+      </div>
+
+      <!-- Tarjeta de ticket 4 -->
+      <div class="ticket-card">
+        <p><strong>Prioridad:</strong> baja &nbsp; <strong>ID:</strong> #####</p>
+        <!-- Se respeta el texto tal cual aparece en la imagen (“harware”) -->
+        <p><strong>Categoría:</strong> harware</p>
+        <div class="arrow-placeholder"></div>
+      </div>
+    </main>
+  </div>
+  <div class="div_nuevo">
+    <!-- Barra superior -->
+    <header class="top-bar">
+      <div class="logo-placeholder"></div>
+      <h1>GESTEC</h1>
+    </header>
+
+    <!-- Barra lateral con íconos -->
+    <aside class="sidebar">
+      <!-- Ícono superior (ejemplo: crear ticket) -->
+      <div class="icon-placeholder"></div>
+      <!-- Ícono siguiente (ejemplo: listado de tickets) -->
+      <div class="icon-placeholder"></div>
+      <!-- Ícono siguiente (ejemplo: historial, reloj, etc.) -->
+      <div class="icon-placeholder"></div>
+      <!-- Ícono inferior (ejemplo: salir, ajustes, etc.) -->
+      <div class="icon-placeholder"></div>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main>
+      <h2>Nuevo ticket</h2>
+      <form class="ticket-form">
+        <label for="categoria">Categoría</label>
+        <select id="categoria" name="categoria">
+          <option value="">selecciona</option>
+          <!-- Agrega más opciones aquí -->
+        </select>
+
+        <label for="prioridad">Prioridad</label>
+        <select id="prioridad" name="prioridad">
+          <option value="">selecciona</option>
+          <!-- Agrega más opciones aquí -->
+        </select>
+
+        <label for="detalle">Detalle</label>
+        <textarea id="detalle" name="detalle" rows="5" placeholder="Describe la novedad"></textarea>
+
+        <button type="submit">Guardar</button>
+      </form>
+    </main>
+  </div>
+
+</body>
+
 </html>

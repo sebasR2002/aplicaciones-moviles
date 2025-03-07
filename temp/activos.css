@@ -1,4 +1,4 @@
-/* Reinicio de estilos básicos */
+Reinicio de estilos básicos
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +14,10 @@ body {
 .top-bar {
   display: flex;
   align-items: center;
-  background-color: #000; /* Fondo negro */
-  color: #fff;            /* Texto blanco */
+  background-color: #000;
+  /* Fondo negro */
+  color: #fff;
+  /* Texto blanco */
   height: 60px;
   padding: 0 20px;
 }
@@ -24,7 +26,8 @@ body {
 .logo-placeholder {
   width: 40px;
   height: 40px;
-  border: 2px solid #fff; /* Para simular un recuadro de imagen */
+  border: 2px solid #fff;
+  /* Para simular un recuadro de imagen */
   margin-right: 10px;
 }
 
@@ -37,30 +40,37 @@ body {
 /* Barra lateral */
 .sidebar {
   position: fixed;
-  top: 60px;               /* Justo debajo de la barra superior */
+  top: 60px;
+  /* Justo debajo de la barra superior */
   left: 0;
-  width: 60px;            /* Ajusta el ancho según tus necesidades */
+  width: 60px;
+  /* Ajusta el ancho según tus necesidades */
   height: calc(100% - 60px);
-  background-color: #000; /* Fondo negro */
+  background-color: #000;
+  /* Fondo negro */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;      /* Espacio arriba para acomodar íconos */
+  padding-top: 20px;
+  /* Espacio arriba para acomodar íconos */
 }
 
 /* Íconos de la barra lateral */
 .icon-placeholder {
   width: 40px;
   height: 40px;
-  border: 2px solid #fff; /* Para simular un recuadro/ícono */
+  border: 2px solid #fff;
+  /* Para simular un recuadro/ícono */
   margin-bottom: 20px;
   /* Puedes agregar fondo, imágenes o íconos reales en lugar de esto */
 }
 
 /* Contenido principal */
 main {
-  margin-left: 60px;       /* Para no tapar el contenido con la barra lateral */
-  margin-top: 60px;        /* Para no tapar el contenido con la barra superior */
+  margin-left: 60px;
+  /* Para no tapar el contenido con la barra lateral */
+  margin-top: 60px;
+  /* Para no tapar el contenido con la barra superior */
   padding: 20px;
 }
 
@@ -77,7 +87,8 @@ main h2 {
   border-radius: 4px;
   padding: 10px 15px;
   margin-bottom: 20px;
-  position: relative; /* Para posicionar la flecha si se desea */
+  position: relative;
+  /* Para posicionar la flecha si se desea */
 }
 
 /* Texto dentro de cada tarjeta */
@@ -89,9 +100,128 @@ main h2 {
 .arrow-placeholder {
   width: 20px;
   height: 20px;
-  border: 2px solid #000; /* Simula la flecha con un recuadro */
+  border: 2px solid #000;
+  /* Simula la flecha con un recuadro */
   position: absolute;
   top: 10px;
   right: 10px;
   /* Agrega estilos extra si deseas simular la flecha */
+}
+
+/* Reinicio de estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Barra superior */
+.top-bar {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  /* Fondo negro */
+  color: #fff;
+  /* Texto blanco */
+  height: 60px;
+  padding: 0 20px;
+}
+
+/* Espacio para el logo en la esquina superior izquierda */
+.logo-placeholder {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  /* Para simular un recuadro de imagen */
+  margin-right: 10px;
+}
+
+/* Texto de la barra superior */
+.top-bar h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+/* Barra lateral */
+.sidebar {
+  position: fixed;
+  top: 60px;
+  /* Justo debajo de la barra superior */
+  left: 0;
+  width: 60px;
+  /* Ajusta el ancho según tus necesidades */
+  height: calc(100% - 60px);
+  background-color: #000;
+  /* Fondo negro */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  /* Espacio arriba para acomodar íconos */
+}
+
+/* Íconos de la barra lateral */
+.icon-placeholder {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  /* Para simular un recuadro/ícono */
+  margin-bottom: 20px;
+  /* Puedes agregar fondo, imágenes o íconos reales en lugar de esto */
+}
+
+/* Contenido principal */
+main {
+  margin-left: 60px;
+  /* Para no tapar el contenido con la barra lateral */
+  margin-top: 60px;
+  /* Para no tapar el contenido con la barra superior */
+  padding: 20px;
+}
+
+/* Título principal en el contenido */
+main h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* Formulario de ticket */
+.ticket-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  /* Ajusta el ancho si lo deseas */
+}
+
+.ticket-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.ticket-form select,
+.ticket-form textarea {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Botón de Guardar */
+.ticket-form button {
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.ticket-form button:hover {
+  background-color: #333;
 }
